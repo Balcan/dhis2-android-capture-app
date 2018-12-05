@@ -88,7 +88,7 @@ public class ImageHolder extends FormViewHolder {
         binding.setLabel(label.toString());
         String[] uids = viewModel.uid().split("\\.");
         Bindings.setObjectStyle(binding.icon, itemView, uids[1]);
-        if (viewModel.value() != null && viewModel.value().equals(code))
+        if (viewModel.value() != null && viewModel.value().equals(labelName))
             binding.frame.setVisibility(View.VISIBLE);
         else
             binding.frame.setVisibility(View.GONE);
